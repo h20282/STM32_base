@@ -1,0 +1,179 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\user\Desktop\STM32-A»ù´¡°¸Àý\1.2_GPIO_LED_REG\GPIO_REG.uvproj
+Project File Date:  04/01/2021
+
+<h2>Output:</h2>
+Build target 'GPIO_REG'
+compiling main.c...
+.\Hardware\led.h(29): warning:  #1295-D: Deprecated declaration LED_Display - give arg types
+.\Hardware\led.h:   void LED_Display();
+.\Hardware\led.h:        ^
+.\Hardware\led.h: User\main.c: 1 warning, 0 errors
+compiling led.c...
+Hardware\led.h(29): warning:  #1295-D: Deprecated declaration LED_Display - give arg types
+Hardware\led.h:   void LED_Display();
+Hardware\led.h:        ^
+Hardware\led.c(28): warning:  #174-D: expression has no effect
+Hardware\led.c:           light<<1;
+Hardware\led.c:           ^
+Hardware\led.c(29): error:  #75: operand of "*" must be a pointer
+Hardware\led.c:           *light=1;     
+Hardware\led.c:            ^
+Hardware\led.c: Hardware\led.c: 2 warnings, 1 error
+assembling STM32F10x.s...
+compiling delay.c...
+compiling sys.c...
+Target not created
+Build target 'GPIO_REG'
+compiling led.c...
+Hardware\led.h(29): warning:  #1295-D: Deprecated declaration LED_Display - give arg types
+Hardware\led.h:   void LED_Display();
+Hardware\led.h:        ^
+Hardware\led.c(28): warning:  #174-D: expression has no effect
+Hardware\led.c:           light<<1;
+Hardware\led.c:           ^
+Hardware\led.c: Hardware\led.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=1544 RO-data=268 RW-data=8 ZI-data=608  
+FromELF: creating hex file...
+".\Output\GPIO_REG.axf" - 0 Error(s), 2 Warning(s).
+Build target 'GPIO_REG'
+linking...
+Program Size: Code=1544 RO-data=268 RW-data=8 ZI-data=608  
+FromELF: creating hex file...
+".\Output\GPIO_REG.axf" - 0 Error(s), 0 Warning(s).
+Build target 'GPIO_REG'
+linking...
+Program Size: Code=1544 RO-data=268 RW-data=8 ZI-data=608  
+FromELF: creating hex file...
+".\Output\GPIO_REG.axf" - 0 Error(s), 0 Warning(s).
+Build target 'GPIO_REG'
+compiling main.c...
+.\Hardware\led.h(29): warning:  #1295-D: Deprecated declaration LED_Display - give arg types
+.\Hardware\led.h:   void LED_Display();
+.\Hardware\led.h:        ^
+.\Hardware\led.h: User\main.c: 1 warning, 0 errors
+compiling led.c...
+Hardware\led.h(29): warning:  #1295-D: Deprecated declaration LED_Display - give arg types
+Hardware\led.h:   void LED_Display();
+Hardware\led.h:        ^
+Hardware\led.c(28): warning:  #174-D: expression has no effect
+Hardware\led.c:           light<<1;
+Hardware\led.c:           ^
+Hardware\led.c: Hardware\led.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=1544 RO-data=268 RW-data=8 ZI-data=608  
+FromELF: creating hex file...
+".\Output\GPIO_REG.axf" - 0 Error(s), 3 Warning(s).
+Build target 'GPIO_REG'
+compiling led.c...
+Hardware\led.h(29): warning:  #1295-D: Deprecated declaration LED_Display - give arg types
+Hardware\led.h:   void LED_Display();
+Hardware\led.h:        ^
+Hardware\led.c(28): warning:  #174-D: expression has no effect
+Hardware\led.c:           light<<1;
+Hardware\led.c:           ^
+Hardware\led.c(30): warning:  #223-D: function "delay_ms" declared implicitly
+Hardware\led.c:           delay_ms();
+Hardware\led.c:           ^
+Hardware\led.c: Hardware\led.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=1548 RO-data=268 RW-data=8 ZI-data=608  
+FromELF: creating hex file...
+".\Output\GPIO_REG.axf" - 0 Error(s), 3 Warning(s).
+Build target 'GPIO_REG'
+compiling led.c...
+Hardware\led.h(29): warning:  #1295-D: Deprecated declaration LED_Display - give arg types
+Hardware\led.h:   void LED_Display();
+Hardware\led.h:        ^
+Hardware\led.c(29): warning:  #223-D: function "delay_ms" declared implicitly
+Hardware\led.c:                 delay_ms( 300 ); 
+Hardware\led.c:                 ^
+Hardware\led.c: Hardware\led.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=1556 RO-data=268 RW-data=8 ZI-data=608  
+FromELF: creating hex file...
+".\Output\GPIO_REG.axf" - 0 Error(s), 2 Warning(s).
+Build target 'GPIO_REG'
+compiling led.c...
+Hardware\led.h(29): warning:  #1295-D: Deprecated declaration LED_Display - give arg types
+Hardware\led.h:   void LED_Display();
+Hardware\led.h:        ^
+Hardware\led.c(29): warning:  #223-D: function "delay_ms" declared implicitly
+Hardware\led.c:                 delay_ms( 300 ); 
+Hardware\led.c:                 ^
+Hardware\led.c(35): warning:  #223-D: function "delay_ms" declared implicitly
+Hardware\led.c:                 delay_ms( 300 ); 
+Hardware\led.c:                 ^
+Hardware\led.c: Hardware\led.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=1588 RO-data=268 RW-data=8 ZI-data=608  
+FromELF: creating hex file...
+".\Output\GPIO_REG.axf" - 0 Error(s), 3 Warning(s).
+Build target 'GPIO_REG'
+compiling main.c...
+.\Hardware\led.h(29): warning:  #1295-D: Deprecated declaration LED_Display - give arg types
+.\Hardware\led.h:   void LED_Display();
+.\Hardware\led.h:        ^
+.\Hardware\led.h: User\main.c: 1 warning, 0 errors
+compiling led.c...
+Hardware\led.h(29): warning:  #1295-D: Deprecated declaration LED_Display - give arg types
+Hardware\led.h:   void LED_Display();
+Hardware\led.h:        ^
+Hardware\led.c(29): warning:  #223-D: function "delay_ms" declared implicitly
+Hardware\led.c:                 delay_ms( 300 ); 
+Hardware\led.c:                 ^
+Hardware\led.c: Hardware\led.c: 2 warnings, 0 errors
+assembling STM32F10x.s...
+compiling delay.c...
+compiling sys.c...
+linking...
+Program Size: Code=1556 RO-data=268 RW-data=8 ZI-data=608  
+FromELF: creating hex file...
+".\Output\GPIO_REG.axf" - 0 Error(s), 3 Warning(s).
+Build target 'GPIO_REG'
+compiling main.c...
+.\Hardware\led.h(29): warning:  #1295-D: Deprecated declaration LED_Display - give arg types
+.\Hardware\led.h:   void LED_Display();
+.\Hardware\led.h:        ^
+.\Hardware\led.h: User\main.c: 1 warning, 0 errors
+compiling led.c...
+Hardware\led.h(29): warning:  #1295-D: Deprecated declaration LED_Display - give arg types
+Hardware\led.h:   void LED_Display();
+Hardware\led.h:        ^
+Hardware\led.c(29): warning:  #223-D: function "delay_ms" declared implicitly
+Hardware\led.c:                 delay_ms( 300 ); 
+Hardware\led.c:                 ^
+Hardware\led.c(34): error:  #65: expected a ";"
+Hardware\led.c:                 light =0x01;
+Hardware\led.c:                 ^
+Hardware\led.c: Hardware\led.c: 2 warnings, 1 error
+assembling STM32F10x.s...
+compiling delay.c...
+compiling sys.c...
+Target not created
+Build target 'GPIO_REG'
+compiling main.c...
+.\Hardware\led.h(29): warning:  #1295-D: Deprecated declaration LED_Display - give arg types
+.\Hardware\led.h:   void LED_Display();
+.\Hardware\led.h:        ^
+.\Hardware\led.h: User\main.c: 1 warning, 0 errors
+compiling led.c...
+Hardware\led.h(29): warning:  #1295-D: Deprecated declaration LED_Display - give arg types
+Hardware\led.h:   void LED_Display();
+Hardware\led.h:        ^
+Hardware\led.c(29): warning:  #223-D: function "delay_ms" declared implicitly
+Hardware\led.c:                 delay_ms( 300 ); 
+Hardware\led.c:                 ^
+Hardware\led.c: Hardware\led.c: 2 warnings, 0 errors
+assembling STM32F10x.s...
+compiling delay.c...
+compiling sys.c...
+linking...
+Program Size: Code=1572 RO-data=268 RW-data=8 ZI-data=608  
+FromELF: creating hex file...
+".\Output\GPIO_REG.axf" - 0 Error(s), 3 Warning(s).

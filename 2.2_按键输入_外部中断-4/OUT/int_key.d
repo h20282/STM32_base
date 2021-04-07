@@ -1,0 +1,11 @@
+..\OUT\int_key.o: Int_Key.c
+..\OUT\int_key.o: ..\system\sys\sys.h
+..\OUT\int_key.o: ..\system\sys\stm32f10x_map.h
+..\OUT\int_key.o: ..\system\sys\stm32f10x_conf.h
+..\OUT\int_key.o: ..\system\sys\stm32f10x_type.h
+..\OUT\int_key.o: ..\system\sys\cortexm3_macro.h
+..\OUT\int_key.o: ..\system\sys\stm32f10x_nvic.h
+..\OUT\int_key.o: ..\system\delay\delay.h
+..\OUT\int_key.o: ..\hardware\LED\led.h
+..\OUT\int_key.o: ..\hardware\KEY\key.h
+..\OUT\int_key.o: ..\hardware\exti\exti.h

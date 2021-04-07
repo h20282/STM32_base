@@ -1,0 +1,9 @@
+.\Output\main.o: User\main.c
+.\Output\main.o: .\Sys\sys.h
+.\Output\main.o: .\Sys\stm32f10x_map.h
+.\Output\main.o: .\Sys\stm32f10x_conf.h
+.\Output\main.o: .\Sys\stm32f10x_type.h
+.\Output\main.o: .\Sys\cortexm3_macro.h
+.\Output\main.o: .\Sys\stm32f10x_nvic.h
+.\Output\main.o: .\Sys\delay.h
+.\Output\main.o: .\Hardware\led.h

@@ -1,0 +1,1 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\HAEDWARE -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\ST\STM32F10x" -o "..\Out\main.o" --omf_browse "..\Out\main.crf" --depend "..\Out\main.d" "..\USER\main.c"

@@ -1,0 +1,23 @@
+*** Creating Trace Output File '..\Out\KeyScan.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"..\out\key.o"'
+### List of Objects: adding '"..\out\led.o"'
+### List of Objects: adding '"..\out\sys.o"'
+### List of Objects: adding '"..\out\delay.o"'
+### List of Objects: adding '"..\out\test.o"'
+### List of Objects: adding '"..\out\stm32f10x.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 "..\out\key.o" "..\out\led.o" "..\out\sys.o" "..\out\delay.o" "..\out\test.o" "..\out\stm32f10x.o" --ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list "..\Out\KeyScan.map" -o "..\Out\KeyScan.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '..\Out\KeyScan.axf'
+### ADS-LD Command File: '..\Out\KeyScan.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '..\Out\KeyScan.lnp', Handle=0x00000A64
+### Writing '.lnp' file
+### ADS-LD Command file '..\Out\KeyScan.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

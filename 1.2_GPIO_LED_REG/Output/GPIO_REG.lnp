@@ -1,0 +1,4 @@
+--cpu Cortex-M3 ".\output\main.o" ".\output\led.o" ".\output\stm32f10x.o" ".\output\delay.o" ".\output\sys.o" --strict --scatter ".\Output\GPIO_REG.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Output\GPIO_REG.map" -o ".\Output\GPIO_REG.axf"

@@ -1,0 +1,23 @@
+*** Creating Trace Output File '.\Output\GPIO_REG.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\output\main.o"'
+### List of Objects: adding '".\output\led.o"'
+### List of Objects: adding '".\output\stm32f10x.o"'
+### List of Objects: adding '".\output\delay.o"'
+### List of Objects: adding '".\output\sys.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 ".\output\main.o" ".\output\led.o" ".\output\stm32f10x.o" ".\output\delay.o" ".\output\sys.o" --strict --scatter ".\Output\GPIO_REG.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Output\GPIO_REG.map" -o ".\Output\GPIO_REG.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Output\GPIO_REG.axf'
+### ADS-LD Command File: '.\Output\GPIO_REG.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Output\GPIO_REG.lnp', Handle=0x00000394
+### Writing '.lnp' file
+### ADS-LD Command file '.\Output\GPIO_REG.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

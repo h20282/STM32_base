@@ -1,0 +1,3 @@
+--cpu Cortex-M3 "..\out\exti.o" "..\out\key.o" "..\out\led.o" "..\out\delay.o" "..\out\sys.o" "..\out\int_key.o" "..\out\stm32f10x.o" --ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list "..\OUT\Int_Key.map" -o "..\OUT\Int_Key.axf"

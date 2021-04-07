@@ -1,0 +1,10 @@
+..\Out\test.o: test.c
+..\Out\test.o: ..\SYSTEM\sys\sys.h
+..\Out\test.o: ..\SYSTEM\sys\stm32f10x_map.h
+..\Out\test.o: ..\SYSTEM\sys\stm32f10x_conf.h
+..\Out\test.o: ..\SYSTEM\sys\stm32f10x_type.h
+..\Out\test.o: ..\SYSTEM\sys\cortexm3_macro.h
+..\Out\test.o: ..\SYSTEM\sys\stm32f10x_nvic.h
+..\Out\test.o: ..\SYSTEM\delay\delay.h
+..\Out\test.o: ..\HARDWARE\LED\led.h
+..\Out\test.o: ..\HARDWARE\KEY\key.h

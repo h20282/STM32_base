@@ -1,0 +1,1 @@
+.\Output\STM32F10x.o: Sys\STM32F10x.s

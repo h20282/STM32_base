@@ -1,0 +1,3 @@
+Dependencies for Project 'GPIO_LED', Target 'GPIO_LED': (DO NOT MODIFY !)
+F (.\source\GPIO_LED.c)(0x606D0D47)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\ST\STM32F10x" -o ".\Output\gpio_led.o" --omf_browse ".\Output\gpio_led.crf" --depend ".\Output\gpio_led.d")
+F (.\source\STM32F10x.s)(0x54AAA204)(--cpu Cortex-M3 -g --apcs=interwork -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\ST\STM32F10x" --list ".\Output\STM32F10x.lst" --xref -o ".\Output\STM32F10x.o" --depend ".\Output\STM32F10x.d")
