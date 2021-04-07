@@ -1,0 +1,158 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\user\Desktop\STM32-A基础案例\2.1_按键输入-3\USER\KeyScan.uvproj
+Project File Date:  04/06/2021
+
+<h2>Output:</h2>
+Build target 'KeyScan'
+compiling test.c...
+test.c(8): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+test.c:   void print(u32 num, u32, int time){
+test.c:        ^
+test.c(58): warning:  #111-D: statement is unreachable
+test.c:                                         break;
+test.c:                                         ^
+test.c(25): warning:  #177-D: variable "cnt" was declared but never referenced
+test.c:         u32 cnt = 0;
+test.c:             ^
+test.c: test.c: 2 warnings, 1 error
+Target not created
+Build target 'KeyScan'
+compiling test.c...
+test.c(8): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+test.c:   void print(u32 num, u32, int time){
+test.c:        ^
+test.c(58): warning:  #111-D: statement is unreachable
+test.c:                                         break;
+test.c:                                         ^
+test.c(25): warning:  #177-D: variable "cnt" was declared but never referenced
+test.c:         u32 cnt;
+test.c:             ^
+test.c: test.c: 2 warnings, 1 error
+Target not created
+Build target 'KeyScan'
+compiling test.c...
+test.c(8): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+test.c:   void print(u32 num, u32, int time){
+test.c:        ^
+test.c(58): warning:  #111-D: statement is unreachable
+test.c:                                         break;
+test.c:                                         ^
+test.c(25): warning:  #177-D: variable "cnt" was declared but never referenced
+test.c:         u32 cnt;
+test.c:             ^
+test.c: test.c: 2 warnings, 1 error
+Target not created
+Build target 'KeyScan'
+compiling test.c...
+test.c(8): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+test.c:   void print(u32 num, u32, int time){
+test.c:        ^
+test.c(58): warning:  #111-D: statement is unreachable
+test.c:                                         break;
+test.c:                                         ^
+test.c(25): warning:  #177-D: variable "cnt" was declared but never referenced
+test.c:         u32 cnt;
+test.c:             ^
+test.c: test.c: 2 warnings, 1 error
+Target not created
+Build target 'KeyScan'
+compiling test.c...
+test.c(8): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+test.c:   void print(u32 num, u32, int time){
+test.c:        ^
+test.c(58): warning:  #111-D: statement is unreachable
+test.c:                                         break;
+test.c:                                         ^
+test.c(25): warning:  #177-D: variable "cnt" was declared but never referenced
+test.c:         u32 cnt;
+test.c:             ^
+test.c: test.c: 2 warnings, 1 error
+Target not created
+Build target 'KeyScan'
+compiling test.c...
+test.c(8): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+test.c:   void print(u32 num, u32, u32 time){
+test.c:        ^
+test.c(58): warning:  #111-D: statement is unreachable
+test.c:                                         break;
+test.c:                                         ^
+test.c(25): warning:  #177-D: variable "cnt" was declared but never referenced
+test.c:         u32 cnt;
+test.c:             ^
+test.c: test.c: 2 warnings, 1 error
+Target not created
+Build target 'KeyScan'
+compiling test.c...
+test.c(58): warning:  #111-D: statement is unreachable
+test.c:                                         break;
+test.c:                                         ^
+test.c(25): warning:  #177-D: variable "cnt" was declared but never referenced
+test.c:         u32 cnt;
+test.c:             ^
+test.c: test.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=2336 RO-data=268 RW-data=28 ZI-data=612  
+FromELF: creating hex file...
+"..\Out\KeyScan.axf" - 0 Error(s), 2 Warning(s).
+Build target 'KeyScan'
+compiling test.c...
+test.c(58): warning:  #111-D: statement is unreachable
+test.c:                                         break;
+test.c:                                         ^
+test.c(25): warning:  #177-D: variable "cnt" was declared but never referenced
+test.c:         u32 cnt = 0;
+test.c:             ^
+test.c: test.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=2340 RO-data=268 RW-data=28 ZI-data=612  
+FromELF: creating hex file...
+"..\Out\KeyScan.axf" - 0 Error(s), 2 Warning(s).
+Build target 'KeyScan'
+compiling test.c...
+linking...
+Program Size: Code=2024 RO-data=268 RW-data=28 ZI-data=612  
+FromELF: creating hex file...
+"..\Out\KeyScan.axf" - 0 Error(s), 0 Warning(s).
+Build target 'KeyScan'
+compiling test.c...
+test.c(33): error:  #165: too few arguments in function call
+test.c:                 print(12345678);
+test.c:                               ^
+test.c(35): warning:  #128-D: loop is not reachable from preceding code
+test.c:         while(1)
+test.c:         ^
+test.c: test.c: 1 warning, 1 error
+Target not created
+Build target 'KeyScan'
+compiling test.c...
+test.c(32): error:  #29: expected an expression
+test.c:         while(){
+test.c:               ^
+test.c: test.c: 0 warnings, 1 error
+Target not created
+Build target 'KeyScan'
+compiling test.c...
+test.c(35): warning:  #128-D: loop is not reachable from preceding code
+test.c:         while(1)
+test.c:         ^
+test.c: test.c: 1 warning, 0 errors
+linking...
+Program Size: Code=1992 RO-data=268 RW-data=28 ZI-data=612  
+FromELF: creating hex file...
+"..\Out\KeyScan.axf" - 0 Error(s), 1 Warning(s).
+Build target 'KeyScan'
+compiling test.c...
+linking...
+Program Size: Code=2024 RO-data=268 RW-data=28 ZI-data=612  
+FromELF: creating hex file...
+"..\Out\KeyScan.axf" - 0 Error(s), 0 Warning(s).
+Build target 'KeyScan'
+compiling test.c...
+linking...
+Program Size: Code=2024 RO-data=268 RW-data=28 ZI-data=612  
+FromELF: creating hex file...
+"..\Out\KeyScan.axf" - 0 Error(s), 0 Warning(s).

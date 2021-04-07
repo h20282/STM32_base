@@ -14,7 +14,7 @@
 ### ADS-LD Output File: '..\Out\KeyScan.axf'
 ### ADS-LD Command File: '..\Out\KeyScan.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '..\Out\KeyScan.lnp', Handle=0x00000A64
+### Creating CmdFile '..\Out\KeyScan.lnp', Handle=0x000006F0
 ### Writing '.lnp' file
 ### ADS-LD Command file '..\Out\KeyScan.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.
