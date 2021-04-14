@@ -1,19 +1,19 @@
 typedef unsigned long  u32;
 
-#define RCC_APB2ENR ((u32 *)0x40021018)  //å®šä¹‰APB2ENRå¯„å­˜å™¨    åœ°å€
-#define AFIO_MAPR   ((u32 *)0x40010004)  //å®šä¹‰APIOçš„MAPRå¯„å­˜å™¨
+#define RCC_APB2ENR ((u32 *)0x40021018)  //¶¨ÒåAPB2ENR¼Ä´æÆ÷    µØÖ·
+#define AFIO_MAPR   ((u32 *)0x40010004)  //¶¨ÒåAPIOµÄMAPR¼Ä´æÆ÷
 
-#define GPIOB_CRL (*(u32 *)0x40010C00)    //å®šä¹‰GPIOB_CRLå¯„å­˜å™¨  å€¼
-#define GPIOB_ODR (*(u32 *)0x40010C0C)    //å®šä¹‰GPIOB_ODRå¯„å­˜å™¨
-#define GPIOE_CRH (*(u32 *)0x40011804)    //å®šä¹‰GPIOE_CRHå¯„å­˜å™¨
-#define GPIOE_ODR (*(u32 *)0x4001180C)    //å®šä¹‰GPIOE_ODRå¯„å­˜å™¨
-u32 *gpio_odr=((u32 *)0x4001180c);        //å®šä¹‰æˆåœ°å€å˜é‡
+#define GPIOB_CRL (*(u32 *)0x40010C00)    //¶¨ÒåGPIOB_CRL¼Ä´æÆ÷  Öµ
+#define GPIOB_ODR (*(u32 *)0x40010C0C)    //¶¨ÒåGPIOB_ODR¼Ä´æÆ÷
+#define GPIOE_CRH (*(u32 *)0x40011804)    //¶¨ÒåGPIOE_CRH¼Ä´æÆ÷
+#define GPIOE_ODR (*(u32 *)0x4001180C)    //¶¨ÒåGPIOE_ODR¼Ä´æÆ÷
+u32 *gpio_odr=((u32 *)0x4001180c);        //¶¨Òå³ÉµØÖ·±äÁ¿
 	
-u32 *PEO8 = (u32 *)(0x42000000 +(0x4001180C-0x40000000)*32 + 8*4);  //ä½å¸¦å®šä¹‰PE08
-u32 *PEO9 = (u32 *)(0x42000000 +(0x4001180C-0x40000000)*32 + 9*4);  //ä½å¸¦å®šä¹‰PE09
+u32 *PEO8 = (u32 *)(0x42000000 +(0x4001180C-0x40000000)*32 + 8*4);  //Î»´ø¶¨ÒåPE08
+u32 *PEO9 = (u32 *)(0x42000000 +(0x4001180C-0x40000000)*32 + 9*4);  //Î»´ø¶¨ÒåPE09
 
 int delay(int Time)
-{ //ç®€å•å»¶æ—¶ç¨‹åº
+{ //¼òµ¥ÑÓÊ±³ÌÐò
 	unsigned short t,i,j;
 	for(t=0;t<Time;t++)
 		// for(i=0;i<1000;i++)
@@ -33,27 +33,28 @@ void set_by_bit(u32* base, u32 idx, u32 value) {
 int  main(void)
 {
 	u32 i;
-	*RCC_APB2ENR|=1<<0;	//ä½¿èƒ½AFIO
-	*RCC_APB2ENR|=1<<3; //ä½¿èƒ½PORTBæ—¶é’Ÿ
-	*RCC_APB2ENR|=1<<6;	//ä½¿èƒ½PORTEæ—¶é’Ÿ
+	*RCC_APB2ENR|=1<<0;	//Ê¹ÄÜAFIO
+	*RCC_APB2ENR|=1<<3; //Ê¹ÄÜPORTBÊ±ÖÓ
+	*RCC_APB2ENR|=1<<6;	//Ê¹ÄÜPORTEÊ±ÖÓ
 
-	*AFIO_MAPR |= 0x02000000; //è®¾ç½®PB.3ä¸ºI/Oå£å¯ç”¨ï¼Œä¸”å¯ä»¥SWä»¿çœŸ
+	*AFIO_MAPR |= 0x02000000; //ÉèÖÃPB.3ÎªI/O¿Ú¿ÉÓÃ£¬ÇÒ¿ÉÒÔSW·ÂÕæ
 
-	GPIOB_CRL &= 0xFFFF0FFF; //æ¸…é™¤PB.3åŽŸå…ˆé…ç½®
-	GPIOB_CRL = GPIOB_CRL | 0x00003000; //PB.3é…ç½®ä¸ºæŽ¨æŒ½è¾“å‡º
-	GPIOB_ODR |= 0x00000008; //PB.3è¾“å‡ºé«˜ï¼Œé€‰æ‹©æŽ§åˆ¶LEDç¯
+	GPIOB_CRL &= 0xFFFF0FFF; //Çå³ýPB.3Ô­ÏÈÅäÖÃ
+	GPIOB_CRL = GPIOB_CRL | 0x00003000; //PB.3ÅäÖÃÎªÍÆÍìÊä³ö
+	GPIOB_ODR |= 0x00000008; //PB.3Êä³ö¸ß£¬Ñ¡Ôñ¿ØÖÆLEDµÆ
 	
-	GPIOE_CRH &=0X00000000;  //æ¸…é™¤PE.8-15åŽŸå…ˆé…ç½®
-	GPIOE_CRH |= 0X33333333; //PE.8-15é…ç½®ä¸ºæŽ¨æŒ½è¾“å‡º
-	GPIOE_ODR |= 0x0000FF00; //PE.8-15è¾“å‡ºé«˜ï¼Œå…«ä¸ªLEDç¯å…¨äº®
-
+	GPIOE_CRH &=0X00000000;  //Çå³ýPE.8-15Ô­ÏÈÅäÖÃ
+	GPIOE_CRH |= 0X33333333; //PE.8-15ÅäÖÃÎªÍÆÍìÊä³ö
+	//GPIOE_ODR |= 0x0000FF00; //PE.8-15Êä³ö¸ß£¬°Ë¸öLEDµÆÈ«ÁÁ
+	GPIOE_ODR = 0x00000000; //PE.8-15Êä³öµÍ£¬°Ë¸öLEDµÆÈ«Ãð
+	
 	delay(2);
-
+	
 	while(1)
 	{
 		for(i=0; i<8; i++) {
 			set_by_bit(&GPIOE_ODR, 8+i, 1);
-			delay(1);
+			delay(100*(i+1));
 			set_by_bit(&GPIOE_ODR, 8+i, 0);
 			// GPIOE_ODR = 1<<(i+8);
 			// delay(1);
@@ -72,28 +73,28 @@ int  main(void)
 		// set_by_bit(&GPIOE_ODR, 14, 1);delay(2);
 		// set_by_bit(&GPIOE_ODR, 15, 1);delay(2);
 
-		// GPIOE_ODR = 0x00000100; //ä»…LED1äº®ï¼Œå…¶ä»–ç¯ç­
+		// GPIOE_ODR = 0x00000100; //½öLED1ÁÁ£¬ÆäËûµÆÃð
 		// delay(2);
-		// *PEO8 = 0;  //LED1ç­
+		// *PEO8 = 0;  //LED1Ãð
 		// delay(2);
-		// *PEO8 = 1;  //LED1äº®
+		// *PEO8 = 1;  //LED1ÁÁ
 		// delay(2);
-		// *PEO9 = 1;  //LED2äº®
+		// *PEO9 = 1;  //LED2ÁÁ
 		// delay(2);
-		// GPIOE_ODR = 0x00000400; //ä»…LED3äº®ï¼Œå…¶ä»–ç¯ç­
+		// GPIOE_ODR = 0x00000400; //½öLED3ÁÁ£¬ÆäËûµÆÃð
 		// delay(2);
-		// GPIOE_ODR = 0x00000800; //ä»…LED4äº®ï¼Œå…¶ä»–ç¯ç­
+		// GPIOE_ODR = 0x00000800; //½öLED4ÁÁ£¬ÆäËûµÆÃð
 		// delay(2);
-		// GPIOE_ODR = 0x00001000; //ä»…LED5äº®ï¼Œå…¶ä»–ç¯ç­
+		// GPIOE_ODR = 0x00001000; //½öLED5ÁÁ£¬ÆäËûµÆÃð
 		// delay(2);
-		// GPIOE_ODR = 0x00002000; //ä»…LED6äº®ï¼Œå…¶ä»–ç¯ç­
+		// GPIOE_ODR = 0x00002000; //½öLED6ÁÁ£¬ÆäËûµÆÃð
 		// delay(2);
-		// (*(u32 *)0x4001180C) = 0x00004000; //ä»…LED7äº®ï¼Œå…¶ä»–ç¯ç­
+		// (*(u32 *)0x4001180C) = 0x00004000; //½öLED7ÁÁ£¬ÆäËûµÆÃð
 		// delay(2);
-		// *gpio_odr = 0x00008000; //ä»…LED8äº®ï¼Œå…¶ä»–ç¯ç­
+		// *gpio_odr = 0x00008000; //½öLED8ÁÁ£¬ÆäËûµÆÃð
 		// delay(2);
 	}
-	//æ°¸è¿œä¸ä¼šæ‰§è¡Œåˆ°è¿™
+	//ÓÀÔ¶²»»áÖ´ÐÐµ½Õâ
 	return 0;
 }
 

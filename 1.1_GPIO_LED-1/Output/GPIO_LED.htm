@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Output\GPIO_LED.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Output\GPIO_LED.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 4.1 [Build 481]: Last Updated: Wed Apr 07 09:05:20 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 4.1 [Build 481]: Last Updated: Thu Apr 08 09:21:03 2021
 <BR><P>
 <H3>Maximum Stack Usage =          8 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -221,10 +221,8 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
 </UL>
 
-<P><STRONG><a name="[4a]"></a>delay</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, gpio_led.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = delay
-</UL>
-<BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<P><STRONG><a name="[4a]"></a>delay</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, gpio_led.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[4b]"></a>set_by_bit</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, gpio_led.o(.text))
@@ -233,7 +231,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[44]"></a>main</STRONG> (Thumb, 174 bytes, Stack size 0 bytes, gpio_led.o(.text))
+<P><STRONG><a name="[44]"></a>main</STRONG> (Thumb, 180 bytes, Stack size 0 bytes, gpio_led.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = main &rArr; set_by_bit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_by_bit

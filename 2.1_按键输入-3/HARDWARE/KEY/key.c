@@ -17,9 +17,10 @@ void KEY_Init(void)
 //3，KEY3按下
 //注意此函数有响应优先级,KEY1>KEY2>KEY3!!
 u8 KEY_Scan(void)
-{	 
-	static u8 key_up=1;//按键按松开标志
+{
 	
+	static u8 key_up=1;//按键按松开标志
+	//return (KEY1==0)*1+(KEY2==0)*2+(KEY3==0)*3;
 	if(key_up && (KEY1==0 || KEY2==0 || KEY3==0))
 	{
 		delay_ms(10);//去抖动 

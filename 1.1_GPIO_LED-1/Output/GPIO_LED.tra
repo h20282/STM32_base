@@ -10,7 +10,7 @@
 ### ADS-LD Output File: '.\Output\GPIO_LED.axf'
 ### ADS-LD Command File: '.\Output\GPIO_LED.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\Output\GPIO_LED.lnp', Handle=0x00000888
+### Creating CmdFile '.\Output\GPIO_LED.lnp', Handle=0x00000530
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\Output\GPIO_LED.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

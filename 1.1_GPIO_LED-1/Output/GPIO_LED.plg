@@ -3,7 +3,150 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-C:\Users\user\Desktop\STM32-A»ù´¡°¸Àý\1.1_GPIO_LED-1\GPIO_LED.uvproj
-Project File Date:  04/01/2021
+C:\Users\user\Desktop\file_from_git\STM32_base\1.1_GPIO_LED-1\GPIO_LED.uvproj
+Project File Date:  04/08/2021
 
 <h2>Output:</h2>
+Build target 'GPIO_LED'
+compiling GPIO_LED.c...
+source\GPIO_LED.c(17): warning:  #177-D: variable "i" was declared but never referenced
+source\GPIO_LED.c:      unsigned short t,i,j;
+source\GPIO_LED.c:                       ^
+source\GPIO_LED.c(97): warning:  #111-D: statement is unreachable
+source\GPIO_LED.c:      return 0;
+source\GPIO_LED.c:      ^
+source\GPIO_LED.c: source\GPIO_LED.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=584 RO-data=252 RW-data=0 ZI-data=608  
+FromELF: creating hex file...
+".\Output\GPIO_LED.axf" - 0 Error(s), 2 Warning(s).
+Build target 'GPIO_LED'
+compiling GPIO_LED.c...
+source\GPIO_LED.c(17): warning:  #177-D: variable "i" was declared but never referenced
+source\GPIO_LED.c:      unsigned short t,i,j;
+source\GPIO_LED.c:                       ^
+source\GPIO_LED.c(97): warning:  #111-D: statement is unreachable
+source\GPIO_LED.c:      return 0;
+source\GPIO_LED.c:      ^
+source\GPIO_LED.c: source\GPIO_LED.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=576 RO-data=252 RW-data=0 ZI-data=608  
+FromELF: creating hex file...
+".\Output\GPIO_LED.axf" - 0 Error(s), 2 Warning(s).
+Build target 'GPIO_LED'
+compiling GPIO_LED.c...
+source\GPIO_LED.c(17): warning:  #177-D: variable "i" was declared but never referenced
+source\GPIO_LED.c:      unsigned short t,i,j;
+source\GPIO_LED.c:                       ^
+source\GPIO_LED.c(97): warning:  #111-D: statement is unreachable
+source\GPIO_LED.c:      return 0;
+source\GPIO_LED.c:      ^
+source\GPIO_LED.c: source\GPIO_LED.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=580 RO-data=252 RW-data=0 ZI-data=608  
+FromELF: creating hex file...
+".\Output\GPIO_LED.axf" - 0 Error(s), 2 Warning(s).
+Build target 'GPIO_LED'
+compiling GPIO_LED.c...
+source\GPIO_LED.c(17): warning:  #177-D: variable "i" was declared but never referenced
+source\GPIO_LED.c:      unsigned short t,i,j;
+source\GPIO_LED.c:                       ^
+source\GPIO_LED.c(100): warning:  #111-D: statement is unreachable
+source\GPIO_LED.c:      return 0;
+source\GPIO_LED.c:      ^
+source\GPIO_LED.c: source\GPIO_LED.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=600 RO-data=252 RW-data=0 ZI-data=608  
+FromELF: creating hex file...
+".\Output\GPIO_LED.axf" - 0 Error(s), 2 Warning(s).
+Build target 'GPIO_LED'
+compiling GPIO_LED.c...
+source\GPIO_LED.c(17): warning:  #177-D: variable "i" was declared but never referenced
+source\GPIO_LED.c:      unsigned short t,i,j;
+source\GPIO_LED.c:                       ^
+source\GPIO_LED.c(100): warning:  #111-D: statement is unreachable
+source\GPIO_LED.c:      return 0;
+source\GPIO_LED.c:      ^
+source\GPIO_LED.c: source\GPIO_LED.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=600 RO-data=252 RW-data=0 ZI-data=608  
+FromELF: creating hex file...
+".\Output\GPIO_LED.axf" - 0 Error(s), 2 Warning(s).
+Build target 'GPIO_LED'
+compiling GPIO_LED.c...
+source\GPIO_LED.c(17): warning:  #177-D: variable "i" was declared but never referenced
+source\GPIO_LED.c:      unsigned short t,i,j;
+source\GPIO_LED.c:                       ^
+source\GPIO_LED.c(100): warning:  #111-D: statement is unreachable
+source\GPIO_LED.c:      return 0;
+source\GPIO_LED.c:      ^
+source\GPIO_LED.c: source\GPIO_LED.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=564 RO-data=252 RW-data=0 ZI-data=608  
+FromELF: creating hex file...
+".\Output\GPIO_LED.axf" - 0 Error(s), 2 Warning(s).
+Build target 'GPIO_LED'
+compiling GPIO_LED.c...
+source\GPIO_LED.c(17): warning:  #177-D: variable "i" was declared but never referenced
+source\GPIO_LED.c:      unsigned short t,i,j;
+source\GPIO_LED.c:                       ^
+source\GPIO_LED.c(98): warning:  #111-D: statement is unreachable
+source\GPIO_LED.c:      return 0;
+source\GPIO_LED.c:      ^
+source\GPIO_LED.c: source\GPIO_LED.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=584 RO-data=252 RW-data=0 ZI-data=608  
+FromELF: creating hex file...
+".\Output\GPIO_LED.axf" - 0 Error(s), 2 Warning(s).
+Build target 'GPIO_LED'
+compiling GPIO_LED.c...
+source\GPIO_LED.c(17): warning:  #177-D: variable "i" was declared but never referenced
+source\GPIO_LED.c:      unsigned short t,i,j;
+source\GPIO_LED.c:                       ^
+source\GPIO_LED.c(98): warning:  #111-D: statement is unreachable
+source\GPIO_LED.c:      return 0;
+source\GPIO_LED.c:      ^
+source\GPIO_LED.c: source\GPIO_LED.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=584 RO-data=252 RW-data=0 ZI-data=608  
+FromELF: creating hex file...
+".\Output\GPIO_LED.axf" - 0 Error(s), 2 Warning(s).
+Build target 'GPIO_LED'
+compiling GPIO_LED.c...
+source\GPIO_LED.c(17): warning:  #177-D: variable "i" was declared but never referenced
+source\GPIO_LED.c:      unsigned short t,i,j;
+source\GPIO_LED.c:                       ^
+source\GPIO_LED.c(98): warning:  #111-D: statement is unreachable
+source\GPIO_LED.c:      return 0;
+source\GPIO_LED.c:      ^
+source\GPIO_LED.c: source\GPIO_LED.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=584 RO-data=252 RW-data=0 ZI-data=608  
+FromELF: creating hex file...
+".\Output\GPIO_LED.axf" - 0 Error(s), 2 Warning(s).
+Build target 'GPIO_LED'
+compiling GPIO_LED.c...
+source\GPIO_LED.c(17): warning:  #177-D: variable "i" was declared but never referenced
+source\GPIO_LED.c:      unsigned short t,i,j;
+source\GPIO_LED.c:                       ^
+source\GPIO_LED.c(98): warning:  #111-D: statement is unreachable
+source\GPIO_LED.c:      return 0;
+source\GPIO_LED.c:      ^
+source\GPIO_LED.c: source\GPIO_LED.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=588 RO-data=252 RW-data=0 ZI-data=608  
+FromELF: creating hex file...
+".\Output\GPIO_LED.axf" - 0 Error(s), 2 Warning(s).
+Build target 'GPIO_LED'
+compiling GPIO_LED.c...
+source\GPIO_LED.c(17): warning:  #177-D: variable "i" was declared but never referenced
+source\GPIO_LED.c:      unsigned short t,i,j;
+source\GPIO_LED.c:                       ^
+source\GPIO_LED.c(98): warning:  #111-D: statement is unreachable
+source\GPIO_LED.c:      return 0;
+source\GPIO_LED.c:      ^
+source\GPIO_LED.c: source\GPIO_LED.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=592 RO-data=252 RW-data=0 ZI-data=608  
+FromELF: creating hex file...
+".\Output\GPIO_LED.axf" - 0 Error(s), 2 Warning(s).

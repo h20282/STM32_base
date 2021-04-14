@@ -15,45 +15,43 @@ void EXTI0_IRQHandler(void)
 	
 	if(KEY3==0)	 //按键3
 	{
-	while(1){
-		int i;
-		for(i=0;i<100;i++)
-		{
-		switch(status0)
-		{
-		case 7:
-			 SetLed(7,0);
-		     delay_ms(1);
-			 
-	    case 6:
-			 SetLed(6,3);
-		     delay_ms(1);		   
-	   case 5:
-					SetLed(5,1);
-					delay_ms(1);
-	   case 4:
-					SetLed(4,0);
-					delay_ms(1);
-	   case 3:
-					SetLed(3,3);
-					delay_ms(1);
-	   case 2:
-					SetLed(2,0);
-					delay_ms(1);
-	   case 1:
-					SetLed(1,5);
-					delay_ms(1);
+		while(1){
+			int i;
+			for(i=0;i<100;i++)
+			{
+				switch(status0)
+				{
+					case 7:
+						SetLed(7,0);
+						delay_ms(1);
+					case 6:
+						SetLed(6,3);
+						delay_ms(1);		   
+					case 5:
+						SetLed(5,1);
+						delay_ms(1);
+					case 4:
+						SetLed(4,0);
+						delay_ms(1);
+					case 3:
+						SetLed(3,3);
+						delay_ms(1);
+					case 2:
+						SetLed(2,0);
+						delay_ms(1);
+					case 1:
+						SetLed(1,5);
+						delay_ms(1);
+		   default:
+						SetLed(0,0);
+						delay_ms(1);
 
-	   default:
-					SetLed(0,0);
-					delay_ms(1);
-
+				}
+			}
+			status0=(status0+1)%8;
+		}		 
+		EXTI->PR=1<<0;  //清除LINE0上的中断标志位  
 	}
-	}
-	status0=(status0+1)%8;
-	}		 
-	EXTI->PR=1<<0;  //清除LINE0上的中断标志位  
-}
 }
 
 //外部中断1服务程序
@@ -68,32 +66,32 @@ void EXTI1_IRQHandler(void)
 		{
 		switch(status1)
 		{
-		case 7:
+			case 7:
 			 SetLed(0,0);
-		     delay_ms(1);
+			 	delay_ms(1);
 			 
-	    case 6:
-			 SetLed(1,5);
-		     delay_ms(1);
-	   case 5:
-					SetLed(2,0);
-					delay_ms(1);
-	   case 4:
-					SetLed(3,3);
-					delay_ms(1);
-	   case 3:
-					SetLed(4,0);
-					delay_ms(1);
-	   case 2:
-					SetLed(5,1);
-					delay_ms(1);
-	   case 1:
-					SetLed(6,3);
-					delay_ms(1);
+			case 6:
+			 	SetLed(1,5);
+			 	delay_ms(1);
+	   		case 5:
+				SetLed(2,0);
+				delay_ms(1);
+	   		case 4:
+				SetLed(3,3);
+				delay_ms(1);
+	   		case 3:
+				SetLed(4,0);
+				delay_ms(1);
+	   		case 2:
+				SetLed(5,1);
+				delay_ms(1);
+	   		case 1:
+				SetLed(6,3);
+				delay_ms(1);
 
-	   default:
-					SetLed(7,0);
-					delay_ms(1);
+	   		default:
+				SetLed(7,0);
+				delay_ms(1);
 
 	}
 	}
@@ -110,7 +108,7 @@ void EXTI2_IRQHandler(void)
 	if(KEY1==0)	 //按键2
 	{
 	
-		            SetLed(3,0);
+					SetLed(3,0);
 					delay_ms(20);
 					SetLed(4,0);
 					delay_ms(50);
@@ -134,7 +132,7 @@ void EXTI2_IRQHandler(void)
 //初始化PC0-2为中断输入.
 void EXTIX_Init(void)
 {
-	RCC->APB2ENR|=1<<4;     //使能PORTC时钟
+	RCC->APB2ENR|=1<<4;	   //使能PORTC时钟
 	GPIOC->CRL&=0XFFFFF000;//PC0-2设置成输入	  
 	GPIOC->CRL|=0X00000888;
 	
