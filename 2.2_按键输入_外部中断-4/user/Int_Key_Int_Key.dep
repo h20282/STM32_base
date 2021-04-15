@@ -1,5 +1,5 @@
 Dependencies for Project 'Int_Key', Target 'Int_Key': (DO NOT MODIFY !)
-F (..\hardware\exti\exti.c)(0x607661EB)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\hardware\exti -I..\hardware\KEY -I..\hardware\LED -I..\system\delay -I..\system\sys -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\ST\STM32F10x" -o "..\OUT\exti.o" --omf_browse "..\OUT\exti.crf" --depend "..\OUT\exti.d")
+F (..\hardware\exti\exti.c)(0x60779B5D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\hardware\exti -I..\hardware\KEY -I..\hardware\LED -I..\system\delay -I..\system\sys -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\ST\STM32F10x" -o "..\OUT\exti.o" --omf_browse "..\OUT\exti.crf" --depend "..\OUT\exti.d")
 I (..\hardware\exti\exti.h)(0x606E4955)
 I (..\system\sys\sys.h)(0x606E4955)
 I (..\system\sys\stm32f10x_map.h)(0x606E4955)

@@ -4,6 +4,21 @@
 #include "led.h"
 
 
+
+void print(u32 num, u32 time){
+	// 在8位数码管上显示数字v
+	u32 i,t,v;
+	for (t=0; t<time; t++){
+		v = num;		
+		for ( i = 0; i < 8; ++i ) {
+			SetLed(7-i, v % 10);
+			//SetLed(7-i, i);
+			delay_ms(1);
+			v = v / 10;
+		}
+	}	
+}
+
 int main( void )
 {
 	/*u8 i = 1;
@@ -24,20 +39,27 @@ int main( void )
 	delay_init(72);	     //延时初始化 
 	uart_init(72,9600);	 //串口初始化为9600
 	LED_Init();		  	 //初始化与LED连接的硬件接口    
+	LED_SEL = 1;
 	while(1)
 	{
 		if(USART_RX_STA&0x80)
 		{					   
+			u32 num = 0;
 			len=USART_RX_STA&0x3f;//得到此次接收到的数据长度
 			printf("\n Your MSG: \n");
+
 			for(t=0;t<len;t++)
 			{
+				num *= 10;
+				num += USART_RX_BUF[t]-'0';
 				USART1->DR=USART_RX_BUF[t];
 				while((USART1->SR&0X40)==0);//等待发送结束
 			}
+			print(num, 100);
 			printf("\n\n");//插入换行
 			USART_RX_STA=0;
-		}else
+		}
+		else
 		{
 			times++;
 			if(times%5000==0)

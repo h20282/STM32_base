@@ -15,7 +15,7 @@
 ### ADS-LD Output File: '..\OUT\Int_Key.axf'
 ### ADS-LD Command File: '..\OUT\Int_Key.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '..\OUT\Int_Key.lnp', Handle=0x00000584
+### Creating CmdFile '..\OUT\Int_Key.lnp', Handle=0x000004CC
 ### Writing '.lnp' file
 ### ADS-LD Command file '..\OUT\Int_Key.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

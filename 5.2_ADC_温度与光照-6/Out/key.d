@@ -1,0 +1,9 @@
+..\Out\key.o: ..\HAEDWARE\key\key.c
+..\Out\key.o: ..\HAEDWARE\key\key.h
+..\Out\key.o: ..\SYSTEM\sys\sys.h
+..\Out\key.o: ..\SYSTEM\sys\stm32f10x_map.h
+..\Out\key.o: ..\SYSTEM\sys\stm32f10x_conf.h
+..\Out\key.o: ..\SYSTEM\sys\stm32f10x_type.h
+..\Out\key.o: ..\SYSTEM\sys\cortexm3_macro.h
+..\Out\key.o: ..\SYSTEM\sys\stm32f10x_nvic.h
+..\Out\key.o: ..\SYSTEM\delay\delay.h

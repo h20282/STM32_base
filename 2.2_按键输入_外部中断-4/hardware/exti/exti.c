@@ -98,9 +98,9 @@ void EXTIX_Init(void)
 	Ex_NVIC_Config(GPIO_C,1,FTIR);//下降沿触发
 	Ex_NVIC_Config(GPIO_C,2,FTIR);//下降沿触发
 
-	MY_NVIC_Init(2,2,EXTI0_IRQChannel,2);//抢占2，子优先级2，组2
+	MY_NVIC_Init(3,2,EXTI0_IRQChannel,2);//抢占2，子优先级2，组2
 	MY_NVIC_Init(2,2,EXTI1_IRQChannel,2);//抢占2，子优先级1，组2	   
-	MY_NVIC_Init(2,2,EXTI2_IRQChannel,2);//抢占2，子优先级1，组2
+	MY_NVIC_Init(1,2,EXTI2_IRQChannel,2);//抢占2，子优先级1，组2
 }
 //void MY_NVIC_Init(u8 NVIC_PreemptionPriority,u8 NVIC_SubPriority,u8 NVIC_Channel,u8 NVIC_Group)
 //NVIC_PreemptionPriority:抢占优先级
