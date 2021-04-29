@@ -1,0 +1,10 @@
+.\objects\timer.o: ..\HARDWARE\timer\timer.c
+.\objects\timer.o: ..\HARDWARE\timer\timer.h
+.\objects\timer.o: ..\SYSTEM\sys\sys.h
+.\objects\timer.o: ..\SYSTEM\sys\stm32f10x_map.h
+.\objects\timer.o: ..\SYSTEM\sys\stm32f10x_conf.h
+.\objects\timer.o: ..\SYSTEM\sys\stm32f10x_type.h
+.\objects\timer.o: ..\SYSTEM\sys\cortexm3_macro.h
+.\objects\timer.o: ..\SYSTEM\sys\stm32f10x_nvic.h
+.\objects\timer.o: ..\SYSTEM\delay\delay.h
+.\objects\timer.o: ..\HARDWARE\LED\led.h

@@ -1,0 +1,15 @@
+--cpu Cortex-M3
+".\objects\stm32f10x.o"
+".\objects\delay.o"
+".\objects\sys.o"
+".\objects\usart.o"
+".\objects\led.o"
+".\objects\adc.o"
+".\objects\exti.o"
+".\objects\key.o"
+".\objects\timer.o"
+".\objects\main.o"
+--strict --scatter ".\Objects\last.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\last.map" -o .\Objects\last.axf

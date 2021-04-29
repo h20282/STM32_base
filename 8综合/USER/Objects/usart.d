@@ -1,0 +1,9 @@
+.\objects\usart.o: ..\SYSTEM\usart\usart.c
+.\objects\usart.o: ..\SYSTEM\sys\sys.h
+.\objects\usart.o: ..\SYSTEM\sys\stm32f10x_map.h
+.\objects\usart.o: ..\SYSTEM\sys\stm32f10x_conf.h
+.\objects\usart.o: ..\SYSTEM\sys\stm32f10x_type.h
+.\objects\usart.o: ..\SYSTEM\sys\cortexm3_macro.h
+.\objects\usart.o: ..\SYSTEM\sys\stm32f10x_nvic.h
+.\objects\usart.o: ..\SYSTEM\usart\usart.h
+.\objects\usart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
